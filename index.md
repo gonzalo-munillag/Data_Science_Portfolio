@@ -1,6 +1,6 @@
 # Are Boston and Seatlle good AirB&B destinations?
 
-![boston_seattle.webp](src)
+![Boston_Seattle.jpg](src)
 
 You can use the [editor on GitHub](https://github.com/Gonzalo-MG/UDACITY_DataScience/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
