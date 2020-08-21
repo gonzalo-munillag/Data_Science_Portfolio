@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+# Are Boston and Seatlle good AirB&B destinations?
+
+[https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.coastalliving.com%2Ftravel%2Fdouble-take-seattle-boston&psig=AOvVaw2YdkxbzKJrVw6tLkfZLsjw&ust=1598087793699000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPiUlI37q-sCFQAAAAAdAAAAABAD](url)
 
 You can use the [editor on GitHub](https://github.com/Gonzalo-MG/UDACITY_DataScience/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -34,4 +36,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
+
+
+##### Author notes:
+
+Edit page: [editor on GitHub](https://github.com/Gonzalo-MG/UDACITY_DataScience/edit/gh-pages/index.md)
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
