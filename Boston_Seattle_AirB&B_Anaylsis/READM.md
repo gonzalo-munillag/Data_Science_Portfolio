@@ -7,6 +7,8 @@ The project aims to analyse part of the data from AirB&B of the cities of Boston
 3. What are the features that best explain the listings dataset for Boston and how are these correlated?
 4. What are the attributes that best explain good review rating scores of the households advertized and is it possible to predict the reviews with the given data?
 
+[Blogpost](https://munigarry.wixsite.com/bostonseattle)
+
 ## Libraries used
 
 Numpy, pandas, matplotlib, csv, random, datetime, seaborn, sklearn.
