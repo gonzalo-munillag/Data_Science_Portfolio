@@ -4,7 +4,7 @@
 
 This project aims to create a data pipeline from loading to model evaluation to automatize future executions of the pipeline on different future values of datasets.
 
-### Running Instructions Instructions:
+### Running Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
