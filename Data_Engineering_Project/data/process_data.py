@@ -57,6 +57,9 @@ def clean_data(df):
 
         # convert column from string to numeric
         categories[column] = pd.to_numeric(categories[column])
+        
+    # We drop any row that is not binary (above 1)
+    categories = categories[~(categories > 1).any(1)]
 
     # drop the original categories column from `df`
     df.drop(columns=['categories'], inplace=True, axis=1)
@@ -83,7 +86,7 @@ def save_data(df, database_filename):
     engine = create_engine('sqlite:///{}'.format(database_filename))
     
     # Save df to sql database
-    df.to_sql(database_filename.split('/')[-1], engine, index=False)
+    df.to_sql(database_filename.split('/')[-1], engine, index=False, if_exists='replace')
 
 def main():
     if len(sys.argv) == 4:
