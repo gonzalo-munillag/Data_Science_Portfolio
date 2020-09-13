@@ -2,6 +2,8 @@
 
 ### Project Summary
 
+This project aims to create a data pipeline from loading to model evaluation to automatize future executions of the pipeline on different future values of datasets.
+
 ### Running Instructions Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
@@ -14,3 +16,15 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+### Files
+
+disaster_messages.csv: Contains a dataset of the messages send by people in disaster zones
+disaster_categories.csv: Contains the categories of the disasters that may happen on Earth
+DisasterResponse.db: It is a sql dataset containing merged and cleaned data from the previous two datasets
+classifier.pkl: contains a saved model trained with the DisasterResponse.db. It predicts to which category a message belongs
+process_data.py: It contains the ETL pipleine 
+train_classifier.py: It contains the code to train a classifer on the datasets formerly described
+
+In the folder app, one may find the files to execute a web application where one can visualize the results of the model.
+

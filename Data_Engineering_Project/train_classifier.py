@@ -135,7 +135,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
           
     # We calculate the recall, precision and f1 score
     report = classification_report(Y_test.values, y_pred, target_names=category_names)
-    print('The precision, recall and f1 score are: \n')
+    print('The precision, recall and f1-score are: \n')
     print(report)
 
 def save_model(model, model_filepath):
@@ -172,7 +172,7 @@ def main():
         database_filepath, model_filepath = sys.argv[1:]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
         X, Y, category_names = load_data(database_filepath)
-        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
+        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33)
         
         print('Building model...')
         model = build_model()
