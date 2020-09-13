@@ -28,6 +28,9 @@ from sklearn.metrics import classification_report
 from sklearn.grid_search import GridSearchCV
 import pickle
 
+#Constants
+url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+
 def load_data(database_filepath): 
         
     """ Loads a swl dataset and outputs the features and the labels.
@@ -42,19 +45,19 @@ def load_data(database_filepath):
     """
     
     # Dumping the sql dataset into a dataframe
-    engine = create_engine(database_filepath)
+    engine = create_engine('sqlite:///{}'.format(database_filepath))
     df = pd.read_sql_table(database_filepath.split('/')[-1], engine)
-    
+
     # Selecting the data for our features and labels
     X = df['message'].values
     y = df.drop(['id', 'message', 'original', 'genre', 'related'], axis=1)
     category_names = y.columns
     
-    return X, Y, category_names 
+    return X, y, category_names 
 
 def tokenize(text):
     
-    """ Tokenizes a text into words, considering: replacing urls, punctuation, stopwords, and lemmatization.
+    """ Tokenizes a text into words, considering: replace urls, punctuation, stopwords, and lemmatization.
         It will be used in a transformer inside the pipelie
     
     INPUT
@@ -63,14 +66,14 @@ def tokenize(text):
     OUTPUT
     clean_tokens (array) -- array containing clean text on each of its elements
     """
-        
+    
     # get list of all urls using regex
     detected_urls = re.findall(url_regex, text)
     
     # replace each url in text string with placeholder
     for url in detected_urls:
         text = text.replace(url, "urlplaceholder")
-        
+       
     # normalize case and remove punctuation
     text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
 
@@ -127,11 +130,11 @@ def evaluate_model(model, X_test, Y_test, category_names):
     
     # We calculate the accuracy
     y_pred = model.predict(X_test)
-    accuracy = (y_pred == y_test).mean()
-    print('The accuracy of the model is {} \n'.format(accuracy)
+    accuracy = (y_pred == Y_test).mean()
+    print('The accuracy of the model is {} \n'.format(accuracy))
           
     # We calculate the recall, precision and f1 score
-    report = classification_report(y_test.values, y_pred, target_names=category_names))
+    report = classification_report(Y_test.values, y_pred, target_names=category_names)
     print('The precision, recall and f1 score are: \n')
     print(report)
 
