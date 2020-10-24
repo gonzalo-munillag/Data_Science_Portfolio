@@ -24,5 +24,5 @@ Workload: 7 months - 10 h/week
 |[Boston_Seattle_AirB&B_Analysis](https://github.com/gonzalo-munillag/UDACITY_DataScience/tree/master/Boston_Seattle_AirB%26B_Anaylsis)|
 |[Data_Engineering_Project](https://github.com/gonzalo-munillag/UDACITY_DataScience/tree/master/Data_Engineering_Project)|
 |[Recommendation_Engine_IBM](https://github.com/gonzalo-munillag/UDACITY_DataScience/blob/master/Recommendation_Engine_IBM/Recommendations_with_IBM.ipynb)|
-|[Starbucks_Capstone]()|
+|[Starbucks_Capstone](https://github.com/gonzalo-munillag/UDACITY_dataScience/tree/master/Starbucks_Capstone_Challenge)|
 
