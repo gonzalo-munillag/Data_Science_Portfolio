@@ -49,11 +49,11 @@ We will follow the [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_stand
 ### Installation <a name="Introduction_and_motivation"></a>
 
 **Packages needed**
-Wrangling and cleansing: pandas, json, pickle
-Math: numpy, math, scipy
-Visualization: matplotlib, IPython, 
-Progress bar: tim, progressbar
-ML: sklearn
+1. Wrangling and cleansing: pandas, json, pickle
+2. Math: numpy, math, scipy
+3. Visualization: matplotlib, IPython, 
+4. Progress bar: tim, progressbar
+5. ML: sklearn
 
 ### Files in the repository <a name="files"></a>
 
