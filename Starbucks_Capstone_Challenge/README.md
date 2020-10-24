@@ -63,7 +63,6 @@ We will follow the [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_stand
     1.3 transcript.json - records for transactions, offers received, offers viewed, and offers completed
 2. Starbucks_Capstone_notebook.ipynb: Contains an executable python notebook for your to execute and modify as you wish.
 3. Starbucks_Capstone_notebook.html: If you are not interested in extending or executing the code yourself, you may open this file and read through the anaylsis.
-4. Other pickle files saving the datasets and models.
 
 ### Results <a name="Results"></a>
 
