@@ -64,12 +64,26 @@ We will follow the [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_stand
 2. Starbucks_Capstone_notebook.ipynb: Contains an executable python notebook for your to execute and modify as you wish.
 3. Starbucks_Capstone_notebook.html: If you are not interested in extending or executing the code yourself, you may open this file and read through the anaylsis.
 
+### Summary of the end-to-end solution
+
+We follow the CRISP-DM process to answer the following question: What is the likelihood that a customer will respond to a certain offer?
+We started by wrangling, cleaning and exploring the three datasets given: A portfolio with the characteristics of each offer, a profile with the demographics of the clients, and a ledger with transactions from customers. This allowed to answer minor questions related to the data. 
+Because this is a classification problem, we chose accuracy and f-score as out metrics.
+Once each individual dataset was pre-processed (including a feature engineering step for the ledger of transactions in order to distill when an offer was a success or not), we merged all of them in order to have all the information in one dataset, which is necessary to feed a classifier model. 
+We selected the label on which the model would be trained, which was the success attribute. After that, we created the feature to feed the model (dropping the label) and performed a scan of the performance of different classifiers, names: Random forest, logistic regression, gradient boosting, and support vector machines. Gradient boosting performed the best, so we selected it and tried to perform grid search to tune the parameters for better performance, however, the scores remained on around 60% for fscore and 70 % for accuracy. 
+The future work would consist on creating an application, a pipeline, to automate all this process .
+
 ### Results <a name="Results"></a>
 
 The best model to predict if an offer will be successful is Gradient Boosting.
 However, 70% is not such a high accuracy, better than human though. 
 Grid search did not show much improvements, so furtehr tunning should be carried out.
 We saw that the learning rate went from 0.1 to 0.5, while the rest of parameters stayed the same. The enxt logical step would be to try with a learning rate of 0.75 (as 1 was not chosen) and try to change other parameters.
+
+### Challenges faced
+There are two things to note. The first and minor one is the amount of time spent wrangling, cleaning and exploring. It is crucial, otherwise the model will not predict anything adequately, or not at all as it might not work. Additionally, it must be a process to be automated as soon as possible. 
+The second one that I found most challenging and where I spent most of my time was in feature engineering. Distilling information from the transaction dataset was a tough problem as the offers not only overlap, but also the same offers would overlap, thus you could not differentiate one from the other within an interval. A set of assumptions had to be made, being as logical and realistic as possible, and based on them, program an algorithm to execute a logic that would work given any combination of sequences. 
+Feature engineering was crucial, without it, you would not know which offers were successful and which ones were not. Time spent in it is time you save in modeling, tuning your parameters might be a waste of time if (i) your input to the model is not correct, and (ii) your feature engineering was able to collect the information as precisely as possible, improving the accuracy.
 
 
 ### Details <a name="Details"></a>
