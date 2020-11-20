@@ -1,5 +1,4 @@
-# UDACITY: DATA SCIENCE FOR ENTERPRISE
-
+# Udacity: Data science for enterprise
 Workload: 7 months - 10 h/week
 
 Besides these projects, the course contained theoretical classes and multiple practical exercises that covered additional content beyond these projects.
