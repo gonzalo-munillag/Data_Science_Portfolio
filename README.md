@@ -5,7 +5,7 @@ Besides these projects, the course contained theoretical classes and multiple pr
 
 | topic | project |
 |:-------|:-------|
-|**Supervised Learning**|[finding_donors](https://github.com/gonzalo-munillag/UDACITY_DataScience/blob/master/finding_donors/finding_donors.ipynb)
+|**Supervised Learning**|[finding_donors](https://github.com/gonzalo-munillag/UDACITY_DataScience/blob/master/finding_donors/finding_donors.ipynb)|
 |**Deep Learning**|[Create_your_own_image_classifier](https://github.com/gonzalo-munillag/UDACITY_DataScience/blob/master/Create_your_own_image_classifier/Image%20Classifier%20Project.ipynb)|
 |**Unsupervised Learning**|[Identify_Customer_Segments](https://github.com/gonzalo-munillag/UDACITY_DataScience/blob/master/Identity_Customer_Segments/Identify_Customer_Segments.ipynb)|
 |**Introduction to Data Science**|[Boston_Seattle_AirB&B_Analysis](https://github.com/gonzalo-munillag/UDACITY_DataScience/tree/master/Boston_Seattle_AirB%26B_Anaylsis)|
