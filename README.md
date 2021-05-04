@@ -1,7 +1,7 @@
 # Data Science Portfolio
 
 
-## 1. Udacity Data Science 
+## 1. Data Science (Udacity)
 Workload: 7 months - 10 h/week (280 h)  
 [Credential](https://graduation.udacity.com/confirm/VRFNCE3P)
 
