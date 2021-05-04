@@ -1,7 +1,7 @@
-# Udacity: Data science for enterprise
+# Data Science Portfolio
 Workload: 7 months - 10 h/week (280 h)
 
-Besides these projects, the course contained theoretical classes and multiple practical exercises that covered additional content beyond these projects.
+Besides these projects, the Udacity course contained theoretical classes and multiple practical exercises that covered additional content beyond these projects.
 
 | topic | project |
 |:-------|:-------|
