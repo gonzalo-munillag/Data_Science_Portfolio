@@ -2,8 +2,9 @@
 
 
 ## 1. Data Science (Udacity)
-Workload: 7 months - 10 h/week (280 h)  
-[Credential](https://graduation.udacity.com/confirm/VRFNCE3P)
+Workload: 7 months - 10 h/week (280 h) 
+
+[CREDENTIAL](https://graduation.udacity.com/confirm/VRFNCE3P)
 
 Besides these projects, the Udacity course contained theoretical classes and multiple practical exercises that covered additional content beyond these projects.
 
